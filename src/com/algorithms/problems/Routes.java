@@ -41,7 +41,7 @@ public class Routes {
                 curr = curr.getNext();
                 if (curr!=null)citiesResult.addAll(curr.cities);
 
-            };
+            }
             if(count>maxc){
                 results = citiesResult.stream().distinct().collect(Collectors.joining(", "));
                 maxc=count;

@@ -42,7 +42,7 @@ public class LinkedList<T> {
     }
 
     private class Node<T>{
-        private T value;
+        private final T value;
         Node<T> next;
 
         public Node(T value){
